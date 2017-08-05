@@ -2,8 +2,8 @@
     "name": "racecourse/marmot",
     "type": "vcs",
     "license": "MIT",
-    "minimum-stability": "dev",
-    "description": "mysql for courser",
+    "minimum-stability": "beta",
+    "description": "session for courser",
     "version": "0.0.1",
     "authors": [
         {
