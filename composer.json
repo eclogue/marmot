@@ -2,7 +2,7 @@
     "name": "racecourse/marmot",
     "type": "vcs",
     "license": "MIT",
-    "minimum-stability": "stable",
+    "minimum-stability": "dev",
     "description": "session for courser",
     "version": "0.0.1",
     "authors": [
