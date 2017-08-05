@@ -2,7 +2,7 @@
     "name": "racecourse/marmot",
     "type": "vcs",
     "license": "MIT",
-    "minimum-stability": "beta",
+    "minimum-stability": "dev",
     "description": "session for courser",
     "version": "0.0.1",
     "authors": [
@@ -16,6 +16,10 @@
         "psr-4": {"Marmot\\": "src/"}
     },
     "repositories": {
+        "0": {
+            "type": "vcs",
+            "url": "https://github.com/racecourse/marmot"
+        },
         "packagist": {
             "type": "composer",
             "url": "https://packagist.phpcomposer.com"
