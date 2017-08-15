@@ -1,5 +1,5 @@
 {
-    "name": "racecourse/marmot",
+    "name": "eclogue/marmot",
     "type": "vcs",
     "license": "MIT",
     "description": "session for courser",
@@ -17,7 +17,7 @@
     "repositories": {
         "0": {
             "type": "vcs",
-            "url": "https://github.com/racecourse/marmot"
+            "url": "https://github.com/eclogue/marmot"
         },
         "packagist": {
             "type": "composer",
