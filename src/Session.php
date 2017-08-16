@@ -20,7 +20,7 @@ class Session
 
     private $sId;
 
-    public static $session;
+    private static $session;
 
     public function __construct($config = [])
     {
