@@ -116,6 +116,9 @@ class Store implements StoreInterface
     public function validate($token)
     {
         $token = (new Parser())->parse((string)$token); // Parses from a string
+
+        if (!$token->verify($this->signer(),$this->key )) return false;
+
         $created = $token->getClaim('iat');
         $time = time();
         if ($created > $time) return false;
