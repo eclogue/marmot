@@ -55,6 +55,11 @@ class Session
         $req->session = $this;
     }
 
+    public function validate()
+    {
+        return $this->store->isLogin();
+    }
+
     static public function getSession($config)
     {
         if(!self::$session) {

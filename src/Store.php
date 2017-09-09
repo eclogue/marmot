@@ -111,8 +111,7 @@ class Store implements StoreInterface
 
         return $token->__toString();
     }
-
-
+    
     public function validate($token)
     {
         $token = (new Parser())->parse((string)$token); // Parses from a string
@@ -130,6 +129,13 @@ class Store implements StoreInterface
         return $token->getClaim('data');
     }
 
+    public function isLogin()
+    {
+        $cookie = $this->request->cookie;
+        $token = isset($cookie[$this->cookieName]) ? $cookie[$this->cookieName] : null;
+        if (!$token) return false;
+        return $this->validate($token);
+    }
 
     public function get($key = '')
     {
